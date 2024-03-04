@@ -97,11 +97,12 @@ slider.oninput = function() {
 
 document.getElementById("backward").addEventListener('click', () => {
     currentTime = currentMediaSession.getEstimatedTime();
-
+    currentTime -= 10;
 })
 
 document.getElementById("forward").addEventListener('click', () => {
     currentTime = currentMediaSession.getEstimatedTime();
+    currentTime += 10;
 })
 // ========================================================================================================
 
