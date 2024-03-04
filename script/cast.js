@@ -30,6 +30,7 @@ function onSuccess() {
 
 function sessionListener(newSession) {
     currentSession = newSession;
+    start();
 }
 
 function receiverListener(availability) {
